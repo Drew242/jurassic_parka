@@ -1,7 +1,6 @@
 require "rails_helper"
 RSpec.feature "AdminCanCreateItem", type: :feature do
   context "when user is admin" do
-
     it "can see a login when not logged in" do
       visit root_path
       expect(page).to have_content("Login")
